@@ -2,7 +2,7 @@
 
 Some Important commands
 
-    -Command to list images
+    ** Command to list images **
     docker images
 
     -Command to check the process status
