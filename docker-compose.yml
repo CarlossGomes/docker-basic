@@ -12,6 +12,12 @@ services:
       - compose-bridge
     ports:
       - 3000:3000
+    depends_on:
+      - mongodb
+    volumes:
+      - mongo_data:/data/db
 networks:
   compose-bridge:
     driver: bridge
+volumes:
+  mongo_data:
