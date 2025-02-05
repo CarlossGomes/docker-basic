@@ -16,3 +16,15 @@ Some Important commands
 
     -Command to stop all the images by getting the images id
     docker stop $(docker container ls -q)
+
+    -Command to remove all containers
+    docker container rm $(docker container ls -aq)
+
+    -Command to remove all images
+    docker rmi $(docker image ls -aq)
+
+    -Command to push image to dockerhub
+    docker push image-name/app-node:1.0
+
+    -Command to create a tag from an existing image
+    docker tag image-name-old/app-node:1.2 image-name-new/app-node:1.2
